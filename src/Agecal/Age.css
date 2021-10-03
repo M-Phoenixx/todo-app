@@ -1,0 +1,20 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1db9c3;
+  padding: 0.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.todo_title,
+.Age_cal,
+p {
+  padding: 0.3rem;
+  cursor: pointer;
+}
+.todo_title:hover,
+.Age_cal:hover {
+  background: #000000;
+  color: #fefbf3;
+  border-radius: 0.4rem;
+}

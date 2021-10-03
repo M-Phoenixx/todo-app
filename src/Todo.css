@@ -5,12 +5,14 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background: rgb(54, 54, 211);
+}
 .container {
   display: flex;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  background: rgb(54, 54, 211);
+  align-items: center;
+  flex-direction: column;
 }
 .input {
   outline-width: 0;
@@ -18,7 +20,12 @@
 }
 .all-todos {
   text-align: center;
+  margin: 0.3rem;
 }
 .todobutton {
   cursor: pointer;
+}
+.todoinput {
+  display: flex;
+  flex-direction: column;
 }

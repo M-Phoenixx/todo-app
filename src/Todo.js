@@ -40,16 +40,19 @@ const Todo = () => {
         //   setinput([...input, todo]);
           settodo('');
       }
+   
+   
      
      
 
 
     return (
         <div className= "container">
-      <div className="todoinput"> <form action="submit">
+     <div className="enterinput"> <form action="submit">
         <input type="text" className="input" value={todo} onChange= {(e)=>settodo(e.target.value)} />
-        <button className ="todobutton" onClick={addtodo} disabled={!todo} >add todo 🚀 </button></form>
-        <p className= "all-todos">
+        <button className ="todobutton" onClick={addtodo} disabled={!todo} >add todo 🚀 </button>
+        </form></div>
+        <div className="inputtext"><p className= "all-todos">
             {
                input.map((todo)=>(
                    <Task  todo={todo.todo}
@@ -57,9 +60,8 @@ const Todo = () => {
                ))
             }
            
-        </p>
+        </p></div>
             </div>
-        </div>
     )
 }
 

@@ -1,19 +1,23 @@
 import React from 'react'
-import './Navbar.css'
+import './Agecal/Age.css'
+import { Link } from 'react-router-dom'
+
 
 const Navbar = () => {
+    
     return (
         <>
         <div className="navbar">
-           <div className="subbar"> 
-           <div className="fuction"> Todo App</div>
-</div>
-           
-            
+        <p> Pheonix</p>
+            <Link className="todo_title" to="/" >Todo </Link>
+            <Link className="Age_cal" to="/Age" >
+                Age Calculator
+            </Link>
         </div>
+        
             
         </>
     )
 }
 
-export default Navbar;
+export default Navbar
